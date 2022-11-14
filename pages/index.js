@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+
 
 export default function Home() {
   return (
     <>
-    <Head>
+      <Head>
         <title>Home page</title>
         <meta
           name="description"
@@ -15,7 +17,7 @@ export default function Home() {
       <Header />
 
       <main>
-        
+        <Hero />
       </main>
     </>
   )
