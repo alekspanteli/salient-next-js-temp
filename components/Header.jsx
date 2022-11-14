@@ -15,9 +15,27 @@ export default function Header() {
                                 <Logo className="h-10 w-auto" />
                             </Link>
                             <div className="hidden md:flex md:gap-x-6">
-                                <NavLink className="test" href="#features">Features</NavLink>
-                                <NavLink href="#testimonials">Testimonials</NavLink>
-                                <NavLink href="#pricing">Pricing</NavLink>
+                                {[
+                                    {
+                                        href: '#features',
+                                        text: 'Features'
+                                    },
+                                    {
+                                        href: '#testimonials',
+                                        text: 'Testimonials'
+                                    },
+                                    {
+                                        href: '#pricing',
+                                        text: 'Pricing'
+                                    },
+                                ].map((links, index) => (
+                                    <NavLink key={index} href={links.href}>{links.text}</NavLink>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="hidden md:block">
+                                <NavLink href="/login">Sign in</NavLink>
                             </div>
                         </div>
                     </nav>
