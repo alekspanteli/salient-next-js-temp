@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import Logo from '@/components/Logo'
+
 import Container from '@/components/Container'
 
 export default function Header() {
@@ -5,7 +8,11 @@ export default function Header() {
         <>
             <header className="py-10">
                 <Container>
-                    Header goes here
+                    <nav>
+                        <Link href="#" aria-label="Home">
+                            <Logo className="h-10 w-auto" />
+                        </Link>
+                    </nav>
                 </Container>
             </header>
         </>
