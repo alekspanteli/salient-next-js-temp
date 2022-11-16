@@ -3,6 +3,7 @@ import Logo from '@/components/Logo'
 import NavLink from '@/components/NavLink'
 
 import Container from '@/components/Container'
+import Button from '@/components/Button'
 
 export default function Header() {
     return (
@@ -33,10 +34,15 @@ export default function Header() {
                                 ))}
                             </div>
                         </div>
-                        <div className="">
+                        <div className="flex items-center gap-x-5 md:gap-x-8">
                             <div className="hidden md:block">
                                 <NavLink href="/login">Sign in</NavLink>
                             </div>
+                            <Button href="/register" color="blue" target="_blank">
+                                <span>
+                                    Get started <span className="hidden lg:inline">today</span>
+                                </span>
+                            </Button>
                         </div>
                     </nav>
                 </Container>
