@@ -24,7 +24,7 @@ const variantStyles = {
     },
 }
 
-export default function Button({ variant = 'solid', color = 'slate', className, href, ...props }) {
+export default function Button({ variant = 'solid', color = 'blue', className, href, ...props }) {
 
     className = clsx(
         baseStyles[variant],
