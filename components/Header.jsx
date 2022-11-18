@@ -3,7 +3,7 @@ import Logo from '@/components/Logo'
 import NavLink from '@/components/NavLink'
 
 import Container from '@/components/Container'
-import Button from '@/components/Button'
+import Button from '@/components/Btn'
 
 export default function Header() {
     return (
