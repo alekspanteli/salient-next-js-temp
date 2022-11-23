@@ -104,10 +104,9 @@ export default function Header() {
                                     Get started <span className="hidden lg:inline">today</span>
                                 </span>
                             </Button>
-                            {/* <div className="-mr-1 md:hidden">
+                            <div className="-mr-1 md:hidden">
                                 <MobileNavigation />
-                            </div> */}
-                            <MobileNavigation />
+                            </div>
                         </div>
                     </nav>
                 </Container>
